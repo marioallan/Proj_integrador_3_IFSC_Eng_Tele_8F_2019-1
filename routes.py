@@ -2,15 +2,10 @@ import json
 import time
 import os
 
-from flask import Blueprint
-from flask import request
-
+from flask import Blueprint, request, render_template
 from models import Costumer, db, Measurement, image_path
-
 import pytesseract as ocr
-
 from PIL import Image # A Python Imaging Library (PIL)
-
 from werkzeug import secure_filename
 
 routes = Blueprint('routes', __name__)
@@ -19,10 +14,32 @@ routes = Blueprint('routes', __name__)
 def _build_response(response, status):
     return json.dumps(response), status, {'ContentType':'application/json'}
 
+#----------------------------------------------------------------------------------
 
 @routes.route('/', methods=['GET'])
-def test_route():
-    return 'Web-service Flask esta em execução'
+def index():
+    #return 'Web-service Flask esta em execução'
+    return render_template('index.html')
+#----------------------------------------------------------------------------------
+@routes.route('/c', methods=['GET'])
+def c():
+    #return 'Web-service Flask esta em execução'
+    return render_template('cadastro.html',text=json)
+#----------------------------------------------------------------------------------
+
+@routes.route('/upload', methods=['GET'])
+def upload():
+    #return 'Web-service Flask esta em execução'
+    return render_template('upload.html')
+#----------------------------------------------------------------------------------
+
+@routes.route('/uploader', methods = ['GET', 'POST'])
+def upload_file():
+   #if request.method == 'POST':
+      f = request.files['file']
+      f.save(image_path + secure_filename(f.filename))
+      return 'file uploaded successfully'
+
 #----------------------------------------------------------------------------------
 
 @routes.route('/limit', methods=['POST'])
