@@ -1,6 +1,5 @@
 import requests
 
-#end='http://localhost:5000/image_update'
 end='http://35.211.13.184/image_update'
 
 unit = '?consumer_unit=Barra'
