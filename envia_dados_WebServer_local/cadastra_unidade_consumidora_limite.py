@@ -15,7 +15,7 @@ print("---------------------------------------")
 print("")
 
 url='http://localhost:5000/limit'
-#url='http://35.211.13.184/limit'
+
 json={"consumer_unity":unit, "limit":limit}
 
 requests.post(url,json=json)
