@@ -97,11 +97,19 @@ void loop() {
     }
   }
 
-  if (payload[13] == 't') {
-    digitalWrite(2, LOW);
-  } else {
-    digitalWrite(2, HIGH);
-  }
+   switch (payload[13])
+{
+   case 't':
+     digitalWrite(2, LOW);
+   break;
+
+   case 'f':
+     digitalWrite(2, HIGH);
+   break;
+
+   default:
+     digitalWrite(2, LOW);
+}
   
   delay(20000);
 }
