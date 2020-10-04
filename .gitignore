@@ -1,0 +1,4 @@
+# Arquivos a serem ignorados quando ocorrer o envio ao sevidor remoto - Github
+
+# Arquivos
+*.ini
