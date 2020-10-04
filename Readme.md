@@ -1,6 +1,6 @@
 # Projeto Integrador 3
 
-## Engenharia de Telecomunicações - 8ª Fase - 2019-1
+## IFSC - Campus São José - Engenharia de Telecomunicações - 8ª Fase - 2019-1
 
 ### Equipe: Mário Allan Lehmkuhl de Abreu e Lucas Thiesen 
 
