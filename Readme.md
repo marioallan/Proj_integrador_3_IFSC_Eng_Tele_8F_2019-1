@@ -4,4 +4,4 @@
 
 ### Equipe: 
 #### Aluno: Mário Allan Lehmkuhl de Abreu
-#### Lucas Thiesen 
+#### Aluno: Lucas Thiesen 
