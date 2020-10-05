@@ -2,7 +2,7 @@
 
 ### IFSC - Campus São José - Engenharia de Telecomunicações - 8ª Fase - 2019-1 
 
-### Equipe: 
+### Alunos: 
 [**Mário Allan Lehmkuhl de Abreu**](https://bit.ly/3iAEHkJ)\
 [**Lucas Thiesen**](https://bit.ly/2SERbxz) 
 
